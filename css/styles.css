@@ -196,11 +196,11 @@ ul {list-style: none;}
 }
 
 .header-contact-email {
-    color: #2196F3;
+    color: var(--primary-text-color);
 }
 
 .header-contact-tell {
-   color: #757575;
+   color: var(--primary-text-color);
 }
 
 /* * =================END MENU========================= */
@@ -213,6 +213,7 @@ ul {list-style: none;}
     font-size: 44px;
     line-height: 1.364;
     text-align: center;
+    background-color: #212121;
    
 }
 
@@ -229,6 +230,7 @@ ul {list-style: none;}
     line-height: 1.364;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    color: var(--primary-white-color);
 
     width: 696px;
     height: 120px;
@@ -322,15 +324,11 @@ ul {list-style: none;}
 
 /* *=========================SECTION TEAM======================= */
 
-.section-team .conteiner{
+.section-team .conteiner {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     flex-direction: column;
-}
-
-.subtitle-team {
-    display: flex;
-    padding-bottom: 94px;
 }
 
 .section-title-team {
@@ -338,9 +336,31 @@ ul {list-style: none;}
     margin-bottom: 50px;
 }
 
-.subtitle-item-team:not(:last-child) {
-    margin-right: 30px;
+.subtitle-team {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 94px;
+
+    margin-left: calc(-1 * var(--card-set-gap));
+    margin-top: calc(-1 * var(--card-set-gap));
 }
+
+.subtitle-item-team {
+    flex-basis: calc(100% / 4 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
+}
+
+.card-team {
+  box-shadow: var(--card-shadow);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.card-content-team {
+  padding: 30px;
+}
+
 
 .title-team {
     font-weight: 500;
@@ -349,7 +369,6 @@ ul {list-style: none;}
     text-align: center;
     text-transform: uppercase;
     color: var(--title-text-color);
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -395,6 +414,15 @@ ul {list-style: none;}
 
 .footer-contact-address {
     color: rgba(255,255,255,1);
+    margin-bottom: 9px;
+}
+
+.footer-contact-email {
+    margin-bottom: 9px;
+}
+
+.footer-contact-tell {
+    padding-bottom: 60px;
 }
 
 .footer-contact-email,
@@ -449,7 +477,6 @@ ul {list-style: none;}
     font-weight: 500;
     font-size: 16px;
     line-height: 1.165;
-    text-align: center;
     letter-spacing: 0.03em;
     padding-bottom: 94px;
 
@@ -468,13 +495,13 @@ ul {list-style: none;}
     margin-top: var(--card-set-gap);
 }
 
-.card {
+.card-filter {
   box-shadow: var(--card-shadow);
   border-radius: 4px;
   overflow: hidden;
 }
 
-.card-content {
+.card-content-filter {
   padding: 20px;
 }
 
