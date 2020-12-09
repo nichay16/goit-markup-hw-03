@@ -234,7 +234,8 @@ ul {list-style: none;}
     color: var(--primary-white-color);
 
     width: 696px;
-    height: 120px;  
+    height: 120px; 
+    margin-bottom: 30px; 
 }
 
 /* * ===================END HEROES SECTION STYLES=================== */
@@ -365,7 +366,6 @@ ul {list-style: none;}
     font-size: 16px;
     line-height: 1.186;
     text-align: center;
-    text-transform: uppercase;
     color: var(--title-text-color);
     margin-bottom: 10px;
 }
